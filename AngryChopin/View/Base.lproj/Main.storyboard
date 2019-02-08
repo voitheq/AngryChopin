@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Angry Chopin View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="AngryChopinViewController" customModule="AngryChopin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="TRj-w6-7ax" userLabel="CDEFGAHC">
+                                <rect key="frame" x="8" y="-50" width="651" height="225"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sUi-lx-QxS" userLabel="C">
+                                        <rect key="frame" x="0.0" y="0.0" width="81.5" height="225"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xrf-a5-2FE" customClass="RoundedButton" customModule="AngryChopin" customModuleProvider="target">
+                                                <rect key="frame" x="2" y="0.0" width="77.5" height="225"/>
+                                                <color key="backgroundColor" red="0.43529411764705883" green="0.11764705882352941" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="keyTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="w0h-x3-ief"/>
+                                                    <action selector="keyTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3fa-fR-o8V"/>
+                                                    <action selector="keyTouchUpOutside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="odj-Da-kOE"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="Xrf-a5-2FE" secondAttribute="bottom" id="Hdj-gC-fYp"/>
+                                            <constraint firstAttribute="trailing" secondItem="Xrf-a5-2FE" secondAttribute="trailing" constant="2" id="gCw-Fa-bs3"/>
+                                            <constraint firstItem="Xrf-a5-2FE" firstAttribute="top" secondItem="sUi-lx-QxS" secondAttribute="top" id="hXR-SG-qFH"/>
+                                            <constraint firstItem="Xrf-a5-2FE" firstAttribute="leading" secondItem="sUi-lx-QxS" secondAttribute="leading" constant="2" id="nkB-iJ-Ro9"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BdL-wk-IKa" userLabel="D">
+                                        <rect key="frame" x="81.5" y="0.0" width="81.5" height="225"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhu-wg-b3Q" customClass="RoundedButton" customModule="AngryChopin" customModuleProvider="target">
+                                                <rect key="frame" x="2" y="0.0" width="77.5" height="225"/>
+                                                <color key="backgroundColor" red="0.51372549019607838" green="0.20392156862745098" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="keyTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="r7d-Fj-9cC"/>
+                                                    <action selector="keyTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zdz-TH-Nyj"/>
+                                                    <action selector="keyTouchUpOutside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="Wkt-Lf-Fgx"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="nhu-wg-b3Q" secondAttribute="bottom" id="TQN-UW-oIw"/>
+                                            <constraint firstItem="nhu-wg-b3Q" firstAttribute="top" secondItem="BdL-wk-IKa" secondAttribute="top" id="aTR-Nt-a8D"/>
+                                            <constraint firstItem="nhu-wg-b3Q" firstAttribute="leading" secondItem="BdL-wk-IKa" secondAttribute="leading" constant="2" id="qeJ-IP-tOr"/>
+                                            <constraint firstAttribute="trailing" secondItem="nhu-wg-b3Q" secondAttribute="trailing" constant="2" id="tEd-GV-N9y"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P1i-8V-CFb" userLabel="E">
+                                        <rect key="frame" x="163" y="0.0" width="81" height="225"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENB-SM-Jeg" customClass="RoundedButton" customModule="AngryChopin" customModuleProvider="target">
+                                                <rect key="frame" x="2" y="0.0" width="77" height="225"/>
+                                                <color key="backgroundColor" red="0.70980392156862748" green="0.20392156862745098" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="keyTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="kX3-jr-0d5"/>
+                                                    <action selector="keyTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q5b-aE-9cD"/>
+                                                    <action selector="keyTouchUpOutside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="yoR-gq-QsG"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="ENB-SM-Jeg" secondAttribute="trailing" constant="2" id="7RF-fF-lYD"/>
+                                            <constraint firstItem="ENB-SM-Jeg" firstAttribute="leading" secondItem="P1i-8V-CFb" secondAttribute="leading" constant="2" id="SAp-th-Eaj"/>
+                                            <constraint firstItem="ENB-SM-Jeg" firstAttribute="top" secondItem="P1i-8V-CFb" secondAttribute="top" id="v0d-H2-lIP"/>
+                                            <constraint firstAttribute="bottom" secondItem="ENB-SM-Jeg" secondAttribute="bottom" id="vPE-7G-89n"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q7k-Rz-99l" userLabel="F">
+                                        <rect key="frame" x="244" y="0.0" width="81.5" height="225"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CTi-N8-T6p" customClass="RoundedButton" customModule="AngryChopin" customModuleProvider="target">
+                                                <rect key="frame" x="2" y="0.0" width="77.5" height="225"/>
+                                                <color key="backgroundColor" red="0.92941176470588238" green="0.29803921568627451" blue="0.40392156862745099" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="keyTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="zya-O6-3Bb"/>
+                                                    <action selector="keyTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rDN-uD-RxE"/>
+                                                    <action selector="keyTouchUpOutside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="Rqd-pG-GU7"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="CTi-N8-T6p" firstAttribute="leading" secondItem="q7k-Rz-99l" secondAttribute="leading" constant="2" id="BOM-Xj-Ru7"/>
+                                            <constraint firstAttribute="trailing" secondItem="CTi-N8-T6p" secondAttribute="trailing" constant="2" id="M6i-5J-1RK"/>
+                                            <constraint firstItem="CTi-N8-T6p" firstAttribute="top" secondItem="q7k-Rz-99l" secondAttribute="top" id="dHv-7V-zm9"/>
+                                            <constraint firstAttribute="bottom" secondItem="CTi-N8-T6p" secondAttribute="bottom" id="vls-7i-hhy"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M9g-e8-I6w" userLabel="G">
+                                        <rect key="frame" x="325.5" y="0.0" width="81.5" height="225"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mf1-po-wyY" customClass="RoundedButton" customModule="AngryChopin" customModuleProvider="target">
+                                                <rect key="frame" x="2" y="0.0" width="77.5" height="225"/>
+                                                <color key="backgroundColor" red="0.99215686274509807" green="0.65490196078431373" blue="0.87450980392156863" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="keyTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="hZX-1B-thq"/>
+                                                    <action selector="keyTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MXp-ty-brf"/>
+                                                    <action selector="keyTouchUpOutside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="oTc-pa-Wlu"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="Mf1-po-wyY" secondAttribute="bottom" id="2N1-7t-Vx5"/>
+                                            <constraint firstItem="Mf1-po-wyY" firstAttribute="top" secondItem="M9g-e8-I6w" secondAttribute="top" id="l9s-oU-eCo"/>
+                                            <constraint firstItem="Mf1-po-wyY" firstAttribute="leading" secondItem="M9g-e8-I6w" secondAttribute="leading" constant="2" id="qcV-Jd-94L"/>
+                                            <constraint firstAttribute="trailing" secondItem="Mf1-po-wyY" secondAttribute="trailing" constant="2" id="sJm-IE-8i5"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1lh-Pv-zDI" userLabel="A">
+                                        <rect key="frame" x="407" y="0.0" width="81.5" height="225"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rEX-8N-JaQ" customClass="RoundedButton" customModule="AngryChopin" customModuleProvider="target">
+                                                <rect key="frame" x="2" y="0.0" width="77.5" height="225"/>
+                                                <color key="backgroundColor" red="0.85098039215686272" green="0.50196078431372548" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="keyTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="0V9-MP-bL7"/>
+                                                    <action selector="keyTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IuQ-WN-KYH"/>
+                                                    <action selector="keyTouchUpOutside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="2UP-0b-2nS"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="rEX-8N-JaQ" secondAttribute="bottom" id="SoE-hJ-cFz"/>
+                                            <constraint firstItem="rEX-8N-JaQ" firstAttribute="leading" secondItem="1lh-Pv-zDI" secondAttribute="leading" constant="2" id="Tlg-9n-Jhm"/>
+                                            <constraint firstItem="rEX-8N-JaQ" firstAttribute="top" secondItem="1lh-Pv-zDI" secondAttribute="top" id="ddf-Vn-xZ8"/>
+                                            <constraint firstAttribute="trailing" secondItem="rEX-8N-JaQ" secondAttribute="trailing" constant="2" id="e4c-uh-jck"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m80-bb-iBb" userLabel="H">
+                                        <rect key="frame" x="488.5" y="0.0" width="81" height="225"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LO2-IW-bTn" customClass="RoundedButton" customModule="AngryChopin" customModuleProvider="target">
+                                                <rect key="frame" x="2" y="0.0" width="77" height="225"/>
+                                                <color key="backgroundColor" red="0.59999999999999998" green="0.50196078431372548" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="keyTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="dtp-P2-CXG"/>
+                                                    <action selector="keyTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j7i-Sm-d9K"/>
+                                                    <action selector="keyTouchUpOutside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="Dzf-wb-WAr"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="LO2-IW-bTn" secondAttribute="bottom" id="VX0-nn-XUm"/>
+                                            <constraint firstItem="LO2-IW-bTn" firstAttribute="leading" secondItem="m80-bb-iBb" secondAttribute="leading" constant="2" id="bNQ-NP-zIK"/>
+                                            <constraint firstAttribute="trailing" secondItem="LO2-IW-bTn" secondAttribute="trailing" constant="2" id="ixX-Vg-BDH"/>
+                                            <constraint firstItem="LO2-IW-bTn" firstAttribute="top" secondItem="m80-bb-iBb" secondAttribute="top" id="lZ4-oS-xLq"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="glD-WQ-GEW" userLabel="C1">
+                                        <rect key="frame" x="569.5" y="0.0" width="81.5" height="225"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8TS-bv-ydk" customClass="RoundedButton" customModule="AngryChopin" customModuleProvider="target">
+                                                <rect key="frame" x="2" y="0.0" width="77.5" height="225"/>
+                                                <color key="backgroundColor" red="0.3411764705882353" green="0.34509803921568627" blue="0.73333333333333328" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="keyTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="csX-bg-2WO"/>
+                                                    <action selector="keyTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QaR-Mr-zPM"/>
+                                                    <action selector="keyTouchUpOutside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="vEU-AW-f47"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="8TS-bv-ydk" secondAttribute="bottom" id="2kA-n0-BJU"/>
+                                            <constraint firstAttribute="trailing" secondItem="8TS-bv-ydk" secondAttribute="trailing" constant="2" id="HfE-ho-zYo"/>
+                                            <constraint firstItem="8TS-bv-ydk" firstAttribute="top" secondItem="glD-WQ-GEW" secondAttribute="top" id="gMe-3h-rgA"/>
+                                            <constraint firstItem="8TS-bv-ydk" firstAttribute="leading" secondItem="glD-WQ-GEW" secondAttribute="leading" constant="2" id="tHX-a2-rdS"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LwC-Jf-e4B" userLabel="CIs" customClass="RoundedView" customModule="AngryChopin" customModuleProvider="target">
+                                <rect key="frame" x="69" y="-50" width="40.5" height="135"/>
+                                <subviews>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMS-v3-Mpv" customClass="RoundedButton" customModule="AngryChopin" customModuleProvider="target">
+                                        <rect key="frame" x="2" y="0.0" width="36.5" height="133"/>
+                                        <color key="backgroundColor" red="0.91764705882352937" green="0.12549019607843137" blue="0.15294117647058825" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="keyTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="l1P-qe-i5c"/>
+                                            <action selector="keyTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4GL-Me-mNW"/>
+                                            <action selector="keyTouchUpOutside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="B4q-tW-Cjt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.070588235294117646" green="0.79607843137254897" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="TMS-v3-Mpv" secondAttribute="bottom" constant="2" id="6DV-bA-1Hy"/>
+                                    <constraint firstItem="TMS-v3-Mpv" firstAttribute="leading" secondItem="LwC-Jf-e4B" secondAttribute="leading" constant="2" id="WJt-7s-nxl"/>
+                                    <constraint firstAttribute="trailing" secondItem="TMS-v3-Mpv" secondAttribute="trailing" constant="2" id="bDO-Oj-tXH"/>
+                                    <constraint firstItem="TMS-v3-Mpv" firstAttribute="top" secondItem="LwC-Jf-e4B" secondAttribute="top" id="ldk-Gt-DuY"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XDd-BM-YC8" userLabel="Dis" customClass="RoundedView" customModule="AngryChopin" customModuleProvider="target">
+                                <rect key="frame" x="150.5" y="-50" width="40.5" height="135"/>
+                                <subviews>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9x-Sh-CmJ" customClass="RoundedButton" customModule="AngryChopin" customModuleProvider="target">
+                                        <rect key="frame" x="2" y="0.0" width="36.5" height="133"/>
+                                        <color key="backgroundColor" red="0.96862745098039216" green="0.62352941176470589" blue="0.12156862745098039" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="keyTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="yyv-gr-6aY"/>
+                                            <action selector="keyTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zuc-8N-CWZ"/>
+                                            <action selector="keyTouchUpOutside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="o2h-7y-w5c"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.070588235294117646" green="0.79607843137254897" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="E9x-Sh-CmJ" secondAttribute="trailing" constant="2" id="PTV-AD-Z79"/>
+                                    <constraint firstItem="E9x-Sh-CmJ" firstAttribute="leading" secondItem="XDd-BM-YC8" secondAttribute="leading" constant="2" id="UT0-ep-5L6"/>
+                                    <constraint firstAttribute="bottom" secondItem="E9x-Sh-CmJ" secondAttribute="bottom" constant="2" id="Uql-St-XJU"/>
+                                    <constraint firstItem="E9x-Sh-CmJ" firstAttribute="top" secondItem="XDd-BM-YC8" secondAttribute="top" id="cs1-FM-5wL"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g90-1w-qVA" userLabel="Fis" customClass="RoundedView" customModule="AngryChopin" customModuleProvider="target">
+                                <rect key="frame" x="313" y="-50" width="41" height="135"/>
+                                <subviews>
+                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2I-TJ-ELF" customClass="RoundedButton" customModule="AngryChopin" customModuleProvider="target">
+                                        <rect key="frame" x="2" y="0.0" width="37" height="133"/>
+                                        <color key="backgroundColor" red="0.63921568627450975" green="0.79607843137254897" blue="0.2196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="keyTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="xJj-E7-Be5"/>
+                                            <action selector="keyTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eSy-kG-boe"/>
+                                            <action selector="keyTouchUpOutside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="3tf-be-eDt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.070588235294117646" green="0.79607843137254897" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="e2I-TJ-ELF" secondAttribute="trailing" constant="2" id="HKq-Th-mRv"/>
+                                    <constraint firstItem="e2I-TJ-ELF" firstAttribute="leading" secondItem="g90-1w-qVA" secondAttribute="leading" constant="2" id="UkA-lD-VAd"/>
+                                    <constraint firstAttribute="bottom" secondItem="e2I-TJ-ELF" secondAttribute="bottom" constant="2" id="pkU-QQ-ghp"/>
+                                    <constraint firstItem="e2I-TJ-ELF" firstAttribute="top" secondItem="g90-1w-qVA" secondAttribute="top" id="xRE-pb-MXZ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cKq-zs-ZfL" userLabel="Gis" customClass="RoundedView" customModule="AngryChopin" customModuleProvider="target">
+                                <rect key="frame" x="394.5" y="-50" width="40.5" height="135"/>
+                                <subviews>
+                                    <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="coY-1Y-S2o" customClass="RoundedButton" customModule="AngryChopin" customModuleProvider="target">
+                                        <rect key="frame" x="2" y="0.0" width="36.5" height="133"/>
+                                        <color key="backgroundColor" red="0.0" green="0.38431372549019605" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="keyTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="u9P-qX-Opb"/>
+                                            <action selector="keyTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tlR-SW-6aJ"/>
+                                            <action selector="keyTouchUpOutside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="uQ3-D7-5KM"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.070588235294117646" green="0.79607843137254897" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="coY-1Y-S2o" secondAttribute="bottom" constant="2" id="IkP-RB-iim"/>
+                                    <constraint firstItem="coY-1Y-S2o" firstAttribute="leading" secondItem="cKq-zs-ZfL" secondAttribute="leading" constant="2" id="olx-lG-dRG"/>
+                                    <constraint firstItem="coY-1Y-S2o" firstAttribute="top" secondItem="cKq-zs-ZfL" secondAttribute="top" id="wby-sS-Ckd"/>
+                                    <constraint firstAttribute="trailing" secondItem="coY-1Y-S2o" secondAttribute="trailing" constant="2" id="yFR-Qc-aLK"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cep-Vp-FtK" userLabel="Ais" customClass="RoundedView" customModule="AngryChopin" customModuleProvider="target">
+                                <rect key="frame" x="476" y="-50" width="40.5" height="135"/>
+                                <subviews>
+                                    <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wZB-Jj-NFj" customClass="RoundedButton" customModule="AngryChopin" customModuleProvider="target">
+                                        <rect key="frame" x="2" y="0.0" width="36.5" height="133"/>
+                                        <color key="backgroundColor" red="0.023529411764705882" green="0.32156862745098036" blue="0.8666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="keyTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="SYd-tb-PMO"/>
+                                            <action selector="keyTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mvl-06-61Y"/>
+                                            <action selector="keyTouchUpOutside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="nH9-pV-Ndt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.070588235294117646" green="0.79607843137254897" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="wZB-Jj-NFj" firstAttribute="leading" secondItem="cep-Vp-FtK" secondAttribute="leading" constant="2" id="RZ3-z7-ayb"/>
+                                    <constraint firstItem="wZB-Jj-NFj" firstAttribute="top" secondItem="cep-Vp-FtK" secondAttribute="top" id="hN4-Kz-Cj4"/>
+                                    <constraint firstAttribute="bottom" secondItem="wZB-Jj-NFj" secondAttribute="bottom" constant="2" id="ock-03-Czg"/>
+                                    <constraint firstAttribute="trailing" secondItem="wZB-Jj-NFj" secondAttribute="trailing" constant="2" id="rjW-ux-xP8"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="2Hr-Z7-QmA" userLabel="Scores">
+                                <rect key="frame" x="8" y="217" width="651" height="150"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vln-Fq-4bF" customClass="RoundedView" customModule="AngryChopin" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="651" height="34.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TAP TO PLAY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zp8-h3-1N5">
+                                                <rect key="frame" x="0.0" y="0.0" width="651" height="34.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.10588235294117647" green="0.078431372549019607" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="zp8-h3-1N5" secondAttribute="trailing" id="5Yy-iT-UjF"/>
+                                            <constraint firstItem="zp8-h3-1N5" firstAttribute="top" secondItem="Vln-Fq-4bF" secondAttribute="top" id="7Y8-Op-M42"/>
+                                            <constraint firstItem="zp8-h3-1N5" firstAttribute="leading" secondItem="Vln-Fq-4bF" secondAttribute="leading" id="gVR-hC-D20"/>
+                                            <constraint firstAttribute="bottom" secondItem="zp8-h3-1N5" secondAttribute="bottom" id="nmi-jq-38x"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kmd-6r-CnE">
+                                        <rect key="frame" x="0.0" y="38.5" width="651" height="34.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4E4-nX-Kbm" customClass="RoundedView" customModule="AngryChopin" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="77" width="651" height="34.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCORE: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wkS-UZ-I4x">
+                                                <rect key="frame" x="0.0" y="0.0" width="651" height="34.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.070588235294117646" green="0.53725490196078429" blue="0.65490196078431373" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="wkS-UZ-I4x" firstAttribute="top" secondItem="4E4-nX-Kbm" secondAttribute="top" id="8LD-dY-g0Z"/>
+                                            <constraint firstAttribute="trailing" secondItem="wkS-UZ-I4x" secondAttribute="trailing" id="T3a-Hf-SUJ"/>
+                                            <constraint firstItem="wkS-UZ-I4x" firstAttribute="leading" secondItem="4E4-nX-Kbm" secondAttribute="leading" id="U6L-5q-XqA"/>
+                                            <constraint firstAttribute="bottom" secondItem="wkS-UZ-I4x" secondAttribute="bottom" id="aYg-bk-kUt"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eyd-le-Yah" customClass="RoundedView" customModule="AngryChopin" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="115.5" width="651" height="34.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HIGHSCORE: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEx-an-LyI">
+                                                <rect key="frame" x="0.0" y="0.0" width="651" height="34.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.76862745098039209" green="0.89803921568627454" blue="0.2196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="VEx-an-LyI" secondAttribute="trailing" id="Yah-2x-59w"/>
+                                            <constraint firstItem="VEx-an-LyI" firstAttribute="top" secondItem="eyd-le-Yah" secondAttribute="top" id="bsx-9a-wl4"/>
+                                            <constraint firstItem="VEx-an-LyI" firstAttribute="leading" secondItem="eyd-le-Yah" secondAttribute="leading" id="jVj-87-aMl"/>
+                                            <constraint firstAttribute="bottom" secondItem="VEx-an-LyI" secondAttribute="bottom" id="u3c-xE-x97"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.070588235294117646" green="0.79607843137254897" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="g90-1w-qVA" firstAttribute="top" secondItem="LwC-Jf-e4B" secondAttribute="top" id="0bL-9G-S35"/>
+                            <constraint firstItem="cKq-zs-ZfL" firstAttribute="width" secondItem="LwC-Jf-e4B" secondAttribute="width" id="27b-Uh-o3m"/>
+                            <constraint firstItem="LwC-Jf-e4B" firstAttribute="width" secondItem="sUi-lx-QxS" secondAttribute="width" multiplier="0.5" id="7aF-D5-0oV"/>
+                            <constraint firstItem="LwC-Jf-e4B" firstAttribute="centerX" secondItem="sUi-lx-QxS" secondAttribute="trailing" id="96X-KQ-Oed"/>
+                            <constraint firstItem="TRj-w6-7ax" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-50" id="BEH-mU-YhB"/>
+                            <constraint firstItem="g90-1w-qVA" firstAttribute="centerX" secondItem="q7k-Rz-99l" secondAttribute="trailing" id="JKI-o8-iN8"/>
+                            <constraint firstItem="g90-1w-qVA" firstAttribute="width" secondItem="LwC-Jf-e4B" secondAttribute="width" id="K4G-4A-HhV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2Hr-Z7-QmA" secondAttribute="trailing" constant="8" id="KUI-lD-bvh"/>
+                            <constraint firstItem="XDd-BM-YC8" firstAttribute="top" secondItem="LwC-Jf-e4B" secondAttribute="top" id="Kvy-Mq-vPt"/>
+                            <constraint firstItem="cKq-zs-ZfL" firstAttribute="top" secondItem="LwC-Jf-e4B" secondAttribute="top" id="L6m-tZ-Kfk"/>
+                            <constraint firstItem="cep-Vp-FtK" firstAttribute="centerX" secondItem="1lh-Pv-zDI" secondAttribute="trailing" id="N0Z-ek-6cN"/>
+                            <constraint firstItem="XDd-BM-YC8" firstAttribute="centerX" secondItem="BdL-wk-IKa" secondAttribute="trailing" id="Np7-6T-Ccp"/>
+                            <constraint firstItem="LwC-Jf-e4B" firstAttribute="top" secondItem="TRj-w6-7ax" secondAttribute="top" id="V4n-IZ-eTi"/>
+                            <constraint firstItem="cep-Vp-FtK" firstAttribute="top" secondItem="LwC-Jf-e4B" secondAttribute="top" id="ViO-bj-bb9"/>
+                            <constraint firstItem="XDd-BM-YC8" firstAttribute="height" secondItem="LwC-Jf-e4B" secondAttribute="height" id="Vrp-iR-bIp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TRj-w6-7ax" secondAttribute="trailing" constant="8" id="Yix-py-edA"/>
+                            <constraint firstItem="TRj-w6-7ax" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="ZSM-eq-hf7"/>
+                            <constraint firstItem="LwC-Jf-e4B" firstAttribute="height" secondItem="TRj-w6-7ax" secondAttribute="height" multiplier="0.6" id="dem-3Y-lcD"/>
+                            <constraint firstItem="cep-Vp-FtK" firstAttribute="height" secondItem="LwC-Jf-e4B" secondAttribute="height" id="dt5-TB-glF"/>
+                            <constraint firstItem="cep-Vp-FtK" firstAttribute="width" secondItem="LwC-Jf-e4B" secondAttribute="width" id="ftN-9O-Sph"/>
+                            <constraint firstItem="2Hr-Z7-QmA" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4" id="hOS-fg-7zk"/>
+                            <constraint firstItem="cKq-zs-ZfL" firstAttribute="centerX" secondItem="M9g-e8-I6w" secondAttribute="trailing" id="hmh-ry-AVG"/>
+                            <constraint firstItem="TRj-w6-7ax" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.6" id="hsm-tQ-1gy"/>
+                            <constraint firstItem="g90-1w-qVA" firstAttribute="height" secondItem="LwC-Jf-e4B" secondAttribute="height" id="mRj-Jq-C4V"/>
+                            <constraint firstItem="cKq-zs-ZfL" firstAttribute="height" secondItem="LwC-Jf-e4B" secondAttribute="height" id="mSQ-1p-sV0"/>
+                            <constraint firstItem="XDd-BM-YC8" firstAttribute="width" secondItem="LwC-Jf-e4B" secondAttribute="width" id="vNh-TA-znk"/>
+                            <constraint firstItem="2Hr-Z7-QmA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="wVJ-gL-6Xf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2Hr-Z7-QmA" secondAttribute="bottom" constant="8" id="yXf-ST-BAu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="highscoreLabel" destination="VEx-an-LyI" id="y8I-Te-xR6"/>
+                        <outlet property="infoLabel" destination="zp8-h3-1N5" id="boE-mr-3dO"/>
+                        <outlet property="scoreLabel" destination="wkS-UZ-I4x" id="86C-DY-bps"/>
+                        <outletCollection property="keys" destination="Xrf-a5-2FE" collectionClass="NSMutableArray" id="Z4N-vt-Meo"/>
+                        <outletCollection property="keys" destination="TMS-v3-Mpv" collectionClass="NSMutableArray" id="Zsv-d6-w4F"/>
+                        <outletCollection property="keys" destination="nhu-wg-b3Q" collectionClass="NSMutableArray" id="KGQ-qD-bIX"/>
+                        <outletCollection property="keys" destination="E9x-Sh-CmJ" collectionClass="NSMutableArray" id="clk-q1-TNQ"/>
+                        <outletCollection property="keys" destination="ENB-SM-Jeg" collectionClass="NSMutableArray" id="GTg-Zf-to0"/>
+                        <outletCollection property="keys" destination="CTi-N8-T6p" collectionClass="NSMutableArray" id="P6V-rJ-hwA"/>
+                        <outletCollection property="keys" destination="e2I-TJ-ELF" collectionClass="NSMutableArray" id="z2Y-50-LDP"/>
+                        <outletCollection property="keys" destination="Mf1-po-wyY" collectionClass="NSMutableArray" id="BxD-pm-31L"/>
+                        <outletCollection property="keys" destination="coY-1Y-S2o" collectionClass="NSMutableArray" id="Jpr-eX-veG"/>
+                        <outletCollection property="keys" destination="rEX-8N-JaQ" collectionClass="NSMutableArray" id="uIm-ow-xdZ"/>
+                        <outletCollection property="keys" destination="wZB-Jj-NFj" collectionClass="NSMutableArray" id="j45-HL-CDm"/>
+                        <outletCollection property="keys" destination="LO2-IW-bTn" collectionClass="NSMutableArray" id="hfe-2E-JMX"/>
+                        <outletCollection property="keys" destination="8TS-bv-ydk" collectionClass="NSMutableArray" id="ALk-fo-mBc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-49.925037481259373" y="36"/>
+        </scene>
+    </scenes>
+</document>
